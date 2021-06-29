@@ -6,4 +6,6 @@ The preprocessing add metadata and clustering information that are embedded as "
 
 "dataAllProcessing.sh" will downloads and processes all datasets. There are also scripts to process each dataset individually.
 
-An archive of the already preprocessed data can be found here: TODO.
+An archive of the already preprocessed data can be found here: 
+
+https://drive.google.com/file/d/1Fjqc_U97tU5v-yprk7BxmWsZe-mbPzO_/view?usp=sharing
