@@ -33,12 +33,12 @@ ClusterID is defined according the third character of run name (asteroid diamete
 The timestep selected is the last one of the run.
 Run   TimeStep  ClusterID
 yA11  34883     0
+yB11  37894     0
+yC11  30975     0
 yA31  49978     1
 yA32  220062    1
-yB11  37894     0
 yB31  46521     1
-yC11  30975     1
-yC31  48663     0
+yC31  48663     1
 
 
 # (2017) Cloud processes (2D) (.vtu)
