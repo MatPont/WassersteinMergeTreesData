@@ -12,7 +12,7 @@ https://drive.google.com/file/d/1Fjqc_U97tU5v-yprk7BxmWsZe-mbPzO_/view?usp=shari
 
 # Reference
 
-If you plan to use this curated data set in a publication, thanks for referencing the following publication:
+If you plan to use this curated data in a publication, thanks for referencing the following publication:
 
 "Wasserstein Distances, Geodesics and Barycenters of Merge Trees"
 
