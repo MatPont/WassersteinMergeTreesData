@@ -12,6 +12,7 @@
 #### import the simple module from the paraview
 from paraview.simple import *
 import os
+import pandas as pd
 
 # ----------------------------------------------------------------
 # setup the data processing pipelines
@@ -45,6 +46,8 @@ def processDataset():
   runNames = ["yA11", "yA31", "yA32", "yB11", "yB31", "yC11", "yC31"]
   clusterID = [0, 1, 1, 0, 1, 0, 1] # third character of runName (1 or 3)
   
+  data = []
+  
   for i, myFile in enumerate(allFiles):
     print(i, "/", len(allFiles), ":", myFile)
     
@@ -60,6 +63,11 @@ def processDataset():
     ext = ".vtu"
     outFileName = "./processed/"+myFile[:-4]+ext
     XMLUnstructuredGridWriter(FileName=outFileName, Input=res).UpdatePipeline()
+    
+    data.append([outFileName, metaData["TimeStep"], metaData["RunName"], metaData["ClusterID"], metaData["Dim."], metaData["Generation"]])
+    
+  df = pd.DataFrame(data, columns = ["FILE", "TimeStep", "RunName", "ClusterID", "Dim.", "Generation"])
+  df.to_csv("data.csv", index=None)
     
 # ----------------------------------------------------------------
 
